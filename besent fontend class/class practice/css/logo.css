@@ -1,0 +1,157 @@
+
+.netflix {
+    margin-left: 30px;
+    height: 250px;
+    width: 50px;
+    border-right: 50px solid red;
+    border-left: 50px solid red;
+
+}
+
+.netflix::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: block;
+    transform: skew(20deg);
+    box-shadow: 0 0 2px black;
+}
+
+/* .google {
+    margin-top: 30px;
+    height: 200px;
+    width: 30%;
+    border: 20px solid black;
+    background: linear-gradient(to right, red, yellow, green, blue);
+    border-radius: 50%;
+} */
+
+/* .google {
+    margin-left: 40px;
+    margin-top: 30px;
+    height:30px;
+    width: 150px;
+    display: flex;
+    border-left: 80px solid red;
+    border-right:80px solid blue;
+    
+}
+.google::before{
+    content: "";
+    height:30px;
+    width: 335px;
+    background-color: yellow;
+    display: block;
+
+}
+.google::after{
+    content: "";
+    height:30px;
+    width:295px;
+    background-color:green;
+    display: block;
+} */
+
+.logo {
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    background: conic-gradient(
+        #ea4335 0deg 50deg,        
+        #fff 50deg 100deg,
+        #4285f4 100deg 168deg,
+        #34a853 168deg 264deg,
+        #fbbc05 264deg 307deg,
+        #ea4335 307deg 150deg
+
+    );
+    position: absolute;
+}
+
+/* White center */
+.circle::after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 38px;
+    left: 38px;
+}
+
+/* Blue horizontal part */
+.blue-bar {
+    width:100px;
+    height:39px;
+    background: #4285f4;
+    position: absolute;
+    top: 99px;
+    left:100px;
+    transform: skew(0deg);
+    border-bottom-right-radius: 30px;
+}
+
+.with-position{
+    margin-top:300px;
+    width:300px;
+    height: 300px;
+    position: relative;
+}
+.red,
+.blue,
+.green,
+.yellow{
+    width:300px;
+    height: 300px;
+    position: absolute;
+    border: 55px solid transparent;
+
+}
+.red{
+    transform: rotate(-45deg);
+    border-top-color: #ea4335;
+}
+.blue{
+    border-right-color: #4285f4;
+    transform: rotate(-45deg);
+
+
+}
+.green{
+    border-bottom-color: #34a853;
+    transform: rotate(-45deg);
+
+
+}
+.yellow{
+    border-left-color: #fbbc05;
+    transform: rotate(-45deg);
+
+
+}  
+/* .g-test{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    background: conic-gradient(
+        red 0deg 70deg,
+        blue 70deg 140deg,
+        yellow 140deg 210deg,
+        orange 210deg 270deg,
+        purple 270deg 340deg
+    )
+
+} */
+
+
